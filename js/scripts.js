@@ -34,6 +34,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
 //#########################################################################################################
 //#########################################################################################################
 
+/**
+ *
+ * VARIABLES
+ *
+ */
+
+FILES_URL = "https://diogolvaz.github.io/Files";
+
+//#########################################################################################################
+//#########################################################################################################
+
 function showConferencePublications() {
   document.getElementById("conference_publications").style.display = "inline";
   document.getElementById("journal_publications").style.display = "none";
@@ -63,7 +74,7 @@ renderPublication(
   "MIRES: Intrusion Recovery for Applications based on Backend-as-a-Service",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
   "IEEE Transactions on Cloud Computing",
-  "https://diogolvaz.github.io/Diogo-Vaz-Files/Publications/Journal/Vaz_MIRES,2022.pdf",
+  FILES_URL + "/Publications/Journal/Vaz_MIRES,2022.pdf",
   "https://github.com/diogolvaz/MIRES",
   "The Backend-as-a-Service (BaaS) cloud computing\
   model supports many modern popular mobile applications because it simplifies the development and management of services\
@@ -90,7 +101,7 @@ renderPublication(
   "MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
   "7th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (MobiQuitous)",
-  "https://diogolvaz.github.io/Diogo-Vaz-Files/Publications/Conference/Vaz_MIRES,2020.pdf",
+  FILES_URL + "/Publications/Conference/Vaz_MIRES,2020.pdf",
   "https://github.com/diogolvaz/MIRES",
   "Many popular mobile applications rely on the\
   Backend-as-a-Service(BaaS) cloud computing model to\
@@ -121,7 +132,7 @@ renderPublication(
   "MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks",
   "<b>Diogo Vaz</b>",
   "Master Thesis",
-  "https://diogolvaz.github.io/Diogo-Vaz-Files/Publications/Education/Vaz_MasterThesis,2020.pdf",
+  FILES_URL + "/Publications/Education/Vaz_MasterThesis,2020.pdf",
   "https://github.com/diogolvaz/MIRES",
   "Many popular mobile applications rely on the Backend-as-a-Service (BaaS) cloud computing\
   model to simplify the development and management of services like data storage, user authentication and\
