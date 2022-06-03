@@ -372,7 +372,7 @@ renderExperience(
   "Internship",
   "Xpand-IT, Lisboa, Portugal",
   "Development of a web application using Microsoft Azure services",
-  "une 2019 - August 2019"
+  "June 2019 - August 2019"
 );
 
 /**
