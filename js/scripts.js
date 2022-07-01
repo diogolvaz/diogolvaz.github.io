@@ -124,7 +124,7 @@ renderPublication(
   that showed results of 1000 operations reverted in less\
   than 1 minute and with the mobile application inaccessible\
   only for less than 15 seconds.",
-  "Remote, December 2020"
+  "December 2020"
 );
 
 renderPublication(
@@ -159,7 +159,7 @@ renderPublication(
   FILES_URL + "/Publications/Poster/ENSD,2022.pdf",
   "",
   "",
-  "Évora, June 2022"
+  "June 2022"
 );
 
 /**
