@@ -124,7 +124,7 @@ renderPublication(
   that showed results of 1000 operations reverted in less\
   than 1 minute and with the mobile application inaccessible\
   only for less than 15 seconds.",
-  "December 2020"
+  "Remote, December 2020"
 );
 
 renderPublication(
@@ -149,6 +149,17 @@ renderPublication(
   experiments with 4 mobile applications that showed results of 1000 operations reverted in less\
   than 1 minute and with the mobile application inaccessible only for less than 15 seconds.",
   "November 2020"
+);
+
+renderPublication(
+  "ENSD_2022_Poster",
+  "Learning to solve Distributed Problems",
+  "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
+  "Encontro Nacional de Sistemas Distribuídos (Portuguese National Conference on Distributed Systems)",
+  FILES_URL + "/Publications/Poster/ENSD,2022.pdf",
+  "",
+  "",
+  "Évora, June 2022"
 );
 
 /**
