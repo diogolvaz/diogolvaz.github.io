@@ -218,7 +218,7 @@ function renderPublication(
     '"\
                 >\
                 <div class="tooltip">\
-                  <div>Paper</div>\
+                  <div>File</div>\
                 </div>\
                 <i class="fab fa fa-file-text"></i\
               ></a>\
