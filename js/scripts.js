@@ -152,7 +152,7 @@ renderPublication(
 );
 
 renderPublication(
-  "ENSD_2022_Poster",
+  "ENSD_2022",
   "Learning to solve Distributed Problems",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
   "Encontro Nacional de Sistemas Distribuídos (Portuguese National Conference on Distributed Systems)",
