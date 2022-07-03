@@ -31,6 +31,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+document.getElementById("last_update").innerHTML =
+  "Last update: " + document.lastModified;
+
 //#########################################################################################################
 //#########################################################################################################
 
@@ -194,45 +197,9 @@ function renderPublication(
             <div class="publication-place mb-2">\
               ' +
     place +
+    ", " +
+    date +
     '\
-            </div>\
-            <div class="icons">\
-              <a\
-                class="icon"\
-                data-toggle="modal"\
-                data-target="#' +
-    tag +
-    '_Abstract"\
-                href="#' +
-    tag +
-    '_Abstract">\
-                <div class="tooltip">\
-                  <div>Abstract</div>\
-                </div>\
-                <i class="fa fa-align-justify"></i\
-              ></a>\
-              <a\
-                class="icon"\
-                href="' +
-    publication_link +
-    '"\
-                >\
-                <div class="tooltip">\
-                  <div>File</div>\
-                </div>\
-                <i class="fab fa fa-file-text"></i\
-              ></a>\
-              <a\
-                class="icon"\
-                href="' +
-    code_link +
-    '"\
-                >\
-                <div class="tooltip">\
-                  <div>Code</div>\
-                </div>\
-                <i class="fab fa fa-code"></i\
-              ></a>\
             </div>\
               </div>\
           <div\
@@ -261,11 +228,63 @@ function renderPublication(
             </div>\
           </div>\
           <div class="flex-shrink-0">\
-            <span class="text-primary">' +
-    date +
-    "</span>\
+          <div class="icons">\
+              ' +
+    this.renderIcons(tag, abstract, publication_link, code_link) +
+    "\
+            </div>\
           </div>\
         </div>";
+}
+
+function renderIcons(tag, abstract, publication_link, code_link) {
+  icons = "";
+  if (abstract !== "") {
+    icons +=
+      '<a\
+                class="icon"\
+                data-toggle="modal"\
+                data-target="#' +
+      tag +
+      '_Abstract"\
+                href="#' +
+      tag +
+      '_Abstract">\
+                <div class="tooltip">\
+                  <div>Abstract</div>\
+                </div>\
+                <i class="fa fa-align-justify"></i\
+              ></a>';
+  }
+  if (publication_link !== "") {
+    icons +=
+      '<a\
+    class="icon"\
+    href="' +
+      publication_link +
+      '"\
+    >\
+    <div class="tooltip">\
+      <div>File</div>\
+    </div>\
+    <i class="fab fa fa-file-text"></i\
+  ></a>';
+  }
+  if (code_link !== "") {
+    icons +=
+      '<a\
+                class="icon"\
+                href="' +
+      code_link +
+      '"\
+                >\
+                <div class="tooltip">\
+                  <div>Code</div>\
+                </div>\
+                <i class="fab fa fa-code"></i\
+              ></a>';
+  }
+  return icons;
 }
 
 //#########################################################################################################
@@ -289,7 +308,7 @@ function renderPublication(
 renderTeaching(
   "SIRS_2022",
   "Network and Systems Security",
-  "Masters in Information Systems and Computer Engineering",
+  "Msc in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
   "November 2021 - February 2022",
   "Teaching Assistant in laboratory classes"
@@ -298,7 +317,7 @@ renderTeaching(
 renderTeaching(
   "SD_2022",
   "Distributed Systems",
-  "Bachelor in Information Systems and Computer Engineering",
+  "Bsc in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
   "March 2022 - May 2022",
   "Teaching Assistant in laboratory classes"
@@ -312,37 +331,36 @@ renderTeaching(
 
 function renderTeaching(tag, course_name, degree, institution, date, role) {
   document.getElementById(tag).innerHTML =
-    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5">\
+    '<div class="d-flex flex-column flex-md-row justify-content-between mb-7">\
             <div class="flex-grow-1">\
-              <h3 class="mb-0">' +
+              <div class="publication-tittle mb-0">' +
     course_name +
-    '</h3>\
-              <div class="subheading mb-3">\
+    '</div>\
+              <div class="publication-authors">\
                 ' +
     institution +
+    " | " +
+    date +
     '\
-              </div>\
-              <div class="icons">\
-                <a class="icon">\
-                  <div class="tooltip"><div>' +
-    degree +
-    '</div></div>\
-                  <i class="fa-solid fa-graduation-cap"></i>\
-                </a>\
-                <a class="icon">\
-                  <div class="tooltip"><div>' +
-    role +
-    '</div></div>\
-                  <i class="fa-solid fa-chalkboard-user"></i>\
-                </a>\
               </div>\
             </div>\
             <div class="flex-shrink-0">\
-              <span class="text-primary">' +
-    date +
-    "</span>\
+            <div class="icons">\
+            <a class="icon">\
+              <div class="tooltip"><div>' +
+    degree +
+    '</div></div>\
+              <i class="fa-solid fa-graduation-cap"></i>\
+            </a>\
+            <a class="icon">\
+              <div class="tooltip"><div>' +
+    role +
+    '</div></div>\
+              <i class="fa-solid fa-chalkboard-user"></i>\
+            </a>\
+          </div>\
             </div>\
-          </div>";
+          </div>';
 }
 
 //#########################################################################################################
@@ -398,11 +416,13 @@ function renderExperience(tag, role, place, work_description, duration) {
   class="d-flex flex-column flex-md-row justify-content-between mb-5"\
 >\
   <div class="flex-grow-1">\
-    <h3 class="mb-0">' +
+    <div class="publication-tittle mb-0">' +
     role +
-    '</h3>\
-    <div class="subheading mb-3">' +
+    '</div>\
+    <div class="publication-authors mb-3">' +
     place +
+    " | " +
+    duration +
     "</div>\
     <p>" +
     work_description +
@@ -410,11 +430,8 @@ function renderExperience(tag, role, place, work_description, duration) {
     </p>\
   </div>\
   <div class="flex-shrink-0">\
-    <span class="text-primary">' +
-    duration +
-    "</span>\
   </div>\
-</div>";
+</div>';
 }
 
 //#########################################################################################################
@@ -430,7 +447,7 @@ renderEUProject(
   "DE4A_2021_2022",
   "Digital Europe For All (DE4A)",
   "INESC-ID, Lisboa, Portugal",
-  "Development of a portal to facilitate the application of european students to european universities",
+  "Development of a portal to allow the application of european students to european universities",
   "https://www.de4a.eu/",
   "February 2021 - Present"
 );
@@ -449,9 +466,9 @@ function renderEUProject(tag, tittle, place, work_description, link, duration) {
   <div class="flex-grow-1">\
     <div class="flex-container">\
       <div class="flex-child">\
-        <h3 class="mb-0">' +
+        <div class="publication-tittle mb-0">' +
     tittle +
-    '</h3>\
+    '</div>\
       </div>\
       <div class="flex-child" style="margin-top: 5px">\
         <img\
@@ -461,14 +478,18 @@ function renderEUProject(tag, tittle, place, work_description, link, duration) {
         />\
       </div>\
     </div>\
-    <div class="subheading mb-3">' +
+    <div class="publication-authors mb-3">' +
     place +
+    " | " +
+    duration +
     "</div>\
     <p>" +
     work_description +
     '\
     </p>\
-    <div class="icons">\
+  </div>\
+  <div class="flex-shrink-0">\
+  <div class="icons">\
       <a class="icon" href="' +
     link +
     '">\
@@ -477,12 +498,7 @@ function renderEUProject(tag, tittle, place, work_description, link, duration) {
       </a>\
     </div>\
   </div>\
-  <div class="flex-shrink-0">\
-    <span class="text-primary">' +
-    duration +
-    "</span>\
-  </div>\
-</div>";
+</div>';
 }
 
 //#########################################################################################################
