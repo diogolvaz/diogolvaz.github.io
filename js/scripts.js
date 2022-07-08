@@ -447,7 +447,7 @@ renderEUProject(
   "DE4A_2021_2022",
   "Digital Europe For All (DE4A)",
   "INESC-ID, Lisboa, Portugal",
-  "Development of a portal to allow the application of european students to european universities",
+  "Developing a portal connecting the Portuguese public administration and university to public administrations of other countries",
   "https://www.de4a.eu/",
   "February 2021 - Present"
 );
