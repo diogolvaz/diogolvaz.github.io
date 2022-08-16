@@ -310,7 +310,7 @@ renderTeaching(
   "Network and Systems Security",
   "Msc in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
-  "November 2021 - February 2022",
+  "November 2021 - March 2022",
   "Teaching Assistant in laboratory classes"
 );
 
@@ -319,7 +319,7 @@ renderTeaching(
   "Distributed Systems",
   "Bsc in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
-  "March 2022 - May 2022",
+  "March 2022 - July 2022",
   "Teaching Assistant in laboratory classes"
 );
 
