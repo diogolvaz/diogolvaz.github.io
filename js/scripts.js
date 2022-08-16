@@ -397,11 +397,11 @@ renderExperience(
 );
 
 renderExperience(
-  "2019_2019",
+  "2018_2018",
   "Internship",
   "Xpand-IT, Lisboa, Portugal",
   "Development of a web application using Microsoft Azure services",
-  "June 2019 - August 2019"
+  "June 2018 - August 2018"
 );
 
 /**
