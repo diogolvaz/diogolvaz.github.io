@@ -223,7 +223,7 @@ renderTeaching(
 renderTeaching(
   "OS_2023",
   "Operating Systems",
-  "MSc in Information Systems and Computer Engineering",
+  "BSc in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
   "November 2022 - March 2023",
   "Teaching Assistant in laboratory classes"
