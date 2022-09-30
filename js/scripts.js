@@ -99,6 +99,7 @@ renderPublication(
   "Master Thesis",
   FILES_URL + "/Publications/Education/Vaz_MasterThesis,2020.pdf",
   "https://github.com/diogolvaz/MIRES",
+  "November 2020"
 );
 
 renderPublication(
