@@ -11370,19 +11370,12 @@ section.resume-section .resume-section-content {
 */
 
 .name-contact-form-input {
-  width: 40%;
+  width: 80%;
   height: inherit;
-}
-.email-contact-form-input {
-  width: 40%;
-}
-
-.div-message-contact-form-input {
-  height: 10rem;
 }
 
 .message-contact-form-input {
-  width: 50rem;
+  width: 80%;
   height: inherit;
 }
 
