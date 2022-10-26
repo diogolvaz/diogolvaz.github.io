@@ -11362,3 +11362,37 @@ section.resume-section .resume-section-content {
 .quote {
   margin-bottom: 7rem;
 }
+
+/*
+*
+* CONTACT FORM
+*
+*/
+
+.name-contact-form-input {
+  width: 40%;
+  height: inherit;
+}
+.email-contact-form-input {
+  width: 40%;
+}
+
+.div-message-contact-form-input {
+  height: 10rem;
+}
+
+.message-contact-form-input {
+  width: 50rem;
+  height: inherit;
+}
+
+.contact-form-button {
+  background-color: var(--bs-secondary);
+  color: var(--bs-white);
+  border-radius: 15px;
+  width: 5rem;
+}
+
+.contact-form-button:hover {
+  background-color: var(--bs-primary);
+}
