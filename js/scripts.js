@@ -335,10 +335,18 @@ function renderExperience(tag, role, place, work_description, duration) {
  * PROJECTS
  *
  */
+renderProject(
+  "MIRES_2020_2021",
+  "Mobile Applications Intrusion Recovery Service (MIRES)",
+  "INESC-ID, Lisboa, Portugal",
+  "A service to recover the state of mobile applications using Firebase",
+  "https://github.com/diogolvaz/MIRES",
+  "September 2019 - September 2020"
+);
 
-renderEUProject(
+renderProject(
   "DE4A_2021_2022",
-  "Digital Europe For All (DE4A)",
+  "Digital Europe For All (DE4A) | European Project",
   "INESC-ID, Lisboa, Portugal",
   "Developing a portal connecting the Portuguese public administration and university to public administrations of other countries",
   "https://www.de4a.eu/",
@@ -351,7 +359,7 @@ renderEUProject(
  *
  */
 
-function renderEUProject(tag, tittle, place, work_description, link, duration) {
+function renderProject(tag, tittle, place, work_description, link, duration) {
   document.getElementById(tag).innerHTML =
     '<div\
   class="d-flex flex-column flex-md-row justify-content-between mb-5"\
@@ -362,13 +370,6 @@ function renderEUProject(tag, tittle, place, work_description, link, duration) {
         <div class="publication-tittle mb-0">' +
     tittle +
     '</div>\
-      </div>\
-      <div class="flex-child" style="margin-top: 5px">\
-        <img\
-          src="assets/img/european_union.jpeg"\
-          width="50"\
-          height="30"\
-        />\
       </div>\
     </div>\
     <div class="publication-authors mb-3">' +
@@ -396,3 +397,40 @@ function renderEUProject(tag, tittle, place, work_description, link, duration) {
 
 //#########################################################################################################
 //#########################################################################################################
+
+
+/**
+ *
+ * CERTIFICATES
+ *
+ */
+
+function renderCertificate(tag, place, work_description, link, duration) {
+  document.getElementById(tag).innerHTML =
+    '<div\
+  class="d-flex flex-column flex-md-row justify-content-between mb-5"\
+  >\
+  <div class="flex-grow-1">\
+    <div class="flex-container">\
+    <div class="publication-authors mb-3">' +
+    place +
+    " | " +
+    duration +
+    "</div>\
+    <p>" +
+    work_description +
+    '\
+    </p>\
+  </div>\
+  <div class="flex-shrink-0">\
+  <div class="icons">\
+      <a class="icon" href="' +
+    link +
+    '">\
+        <div class="tooltip">Link</div>\
+        <i class="fa fa-link"></i>\
+      </a>\
+    </div>\
+  </div>\
+</div>';
+}
