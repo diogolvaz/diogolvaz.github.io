@@ -77,7 +77,7 @@ renderPublication(
   "MIRES: Intrusion Recovery for Applications based on Backend-as-a-Service",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
   "IEEE Transactions on Cloud Computing",
-  FILES_URL + "/Publications/Journal/Vaz_MIRES,2022.pdf",
+  "https://www.researchgate.net/publication/360965942_MIRES_Intrusion_Recovery_for_Applications_based_on_Backend-as-a-Service",
   "https://github.com/diogolvaz/MIRES",
   "May 2022"
 );
@@ -87,7 +87,7 @@ renderPublication(
   "MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
   "7th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (MobiQuitous)",
-  FILES_URL + "/Publications/Conference/Vaz_MIRES,2020.pdf",
+  "https://www.researchgate.net/publication/353801489_MIRES_Recovering_Mobile_Applications_based_on_Backend-as-a-Service_from_Cyber_Attacks",
   "https://github.com/diogolvaz/MIRES",
   "December 2020"
 );
