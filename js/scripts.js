@@ -387,7 +387,6 @@ function renderProject(tag, tittle, place, work_description, link, duration) {
       <a class="icon" href="' +
     link +
     '">\
-        <div class="tooltip">Link</div>\
         <i class="fa fa-link"></i>\
       </a>\
     </div>\
