@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 document.getElementById("last_update").innerHTML =
-  "Last update: " + document.lastModified;
+  "Last update: " + document.lastModified.substring(0, 10);
 
 //#########################################################################################################
 //#########################################################################################################
@@ -103,13 +103,13 @@ renderPublication(
 );
 
 renderPublication(
-  "ENSD_2022",
-  "Learning to solve Distributed Problems",
+  "Extra_1",
+  "Learning to generate Reliable Broadcast Algorithms",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
-  "Encontro Nacional de Sistemas Distribuídos (Portuguese National Conference on Distributed Systems)",
-  FILES_URL + "/Publications/Poster/ENSD,2022.pdf",
+  "arXiv Preprint",
+  "https://www.researchgate.net/publication/362410565_Learning_to_generate_Reliable_Broadcast_Algorithms",
   "",
-  "June 2022"
+  "July 2022"
 );
 
 /**
