@@ -97,7 +97,7 @@ renderPublication(
   "MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks",
   "<b>Diogo Vaz</b>",
   "Master Thesis",
-  FILES_URL + "/Publications/Education/Vaz_MasterThesis,2020.pdf",
+  "https://www.researchgate.net/publication/367268385_MIRES_Recovering_Mobile_Applications_based_on_Backend-as-a-Service_from_Cyber_Attacks",
   "https://github.com/diogolvaz/MIRES",
   "November 2020"
 );
