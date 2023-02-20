@@ -353,6 +353,15 @@ renderProject(
   "February 2021 - Present"
 );
 
+renderProject(
+  "FAULTAGE",
+  "Generating Fault-Tolerant Distributed Algorithms using Generative AI",
+  "INESC-ID, Lisboa, Portugal",
+  "My PhD work where I'm developing automatic processes to generating fault-tolerant distributed algorithms using machine learning techniques",
+  "https://diogolvaz.github.io/FAULTAGE/",
+  "February 2021 - Present"
+);
+
 /**
  *
  * RENDER PROJECT
