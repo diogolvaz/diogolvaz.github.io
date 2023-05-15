@@ -317,10 +317,12 @@ function renderExperience(tag, role, place, work_description, duration) {
     " | " +
     duration +
     "</div>\
-    <p>" +
+    <ul>\
+    <li>" +
     work_description +
     '\
-    </p>\
+    </li>\
+    </ul>\
   </div>\
   <div class="flex-shrink-0">\
   </div>\
@@ -386,10 +388,12 @@ function renderProject(tag, tittle, place, work_description, link, duration) {
     " | " +
     duration +
     "</div>\
-    <p>" +
+    <ul>\
+  <li>" +
     work_description +
     '\
-    </p>\
+    </li>\
+    </ul>\
   </div>\
   <div class="flex-shrink-0">\
   <div class="icons">\
