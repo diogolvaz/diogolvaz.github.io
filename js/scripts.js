@@ -112,6 +112,16 @@ renderPublication(
   "July 2022"
 );
 
+renderPublication(
+  "Extra_2",
+  "Aprender a gerar algoritmos",
+  "<b>Diogo Vaz</b>",
+  "Público (Portuguese Journal)",
+  "https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140",
+  "",
+  "May 2023"
+);
+
 /**
  *
  * RENDER PUBLICATION
