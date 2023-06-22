@@ -93,6 +93,16 @@ renderPublication(
 );
 
 renderPublication(
+  "DSN_2023",
+  "Automatic Generation of Distributed Algorithms with Generative AI",
+  "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
+  "The 53rd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (Disrupt Track)",
+  "https://www.researchgate.net/publication/371760975_Automatic_Generation_of_Distributed_Algorithms_with_Generative_AI",
+  "",
+  "June 2023"
+);
+
+renderPublication(
   "MIRES_MasterThesis_2020",
   "MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks",
   "<b>Diogo Vaz</b>",
