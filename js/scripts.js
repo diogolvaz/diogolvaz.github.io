@@ -83,6 +83,16 @@ renderPublication(
 );
 
 renderPublication(
+  "IEEE_Access_2023",
+  "Synthesis of Fault-Tolerant Reliable Broadcast Algorithms with Reinforcement Learning",
+  "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
+  "IEEE Access",
+  "https://www.researchgate.net/publication/371705768_Synthesis_of_Fault-Tolerant_Reliable_Broadcast_Algorithms_with_Reinforcement_Learning",
+  "",
+  "June 2023"
+);
+
+renderPublication(
   "MIRES_2020",
   "MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks",
   "<b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia",
