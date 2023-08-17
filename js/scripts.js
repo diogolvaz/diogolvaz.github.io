@@ -534,7 +534,7 @@ renderEducation(
   "September 2018 - November 2020",
   "<ul>\
     <li>Specialization in <b>Distributed Systems</b>, <b>Artificial Intelligence</b> and <b>Cybersecurity</b></li>\
-    <li>Thesis title <b>MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks</b> with grade <b>20/20</b></li>\
+    <li>Thesis focused on the field of <b>intrusion recovery for mobile applications</b> with a grade of <b>20/20</b></li>\
     <li>Final grade: 17/20</li>\
   </ul>"
 );
