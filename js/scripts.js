@@ -32,7 +32,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 document.getElementById("last_update").innerHTML =
-  "Last update: " + document.lastModified.substring(0, 10);
+  "Last update: " + [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ][new Date(document.lastModified).getMonth()] + " " + new Date(document.lastModified).getFullYear();
 
 //#########################################################################################################
 //#########################################################################################################
@@ -79,7 +82,8 @@ renderPublication(
   "IEEE Transactions on Cloud Computing",
   "https://www.researchgate.net/publication/360965942_MIRES_Intrusion_Recovery_for_Applications_based_on_Backend-as-a-Service",
   "https://github.com/diogolvaz/MIRES",
-  "May 2022"
+  "May 2022",
+  true
 );
 
 renderPublication(
@@ -89,7 +93,8 @@ renderPublication(
   "IEEE Access",
   "https://www.researchgate.net/publication/371705768_Synthesis_of_Fault-Tolerant_Reliable_Broadcast_Algorithms_with_Reinforcement_Learning",
   "",
-  "June 2023"
+  "June 2023",
+  true
 );
 
 renderPublication(
@@ -99,7 +104,8 @@ renderPublication(
   "7th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (MobiQuitous)",
   "https://www.researchgate.net/publication/353801489_MIRES_Recovering_Mobile_Applications_based_on_Backend-as-a-Service_from_Cyber_Attacks",
   "https://github.com/diogolvaz/MIRES",
-  "December 2020"
+  "December 2020",
+  false
 );
 
 renderPublication(
@@ -109,7 +115,8 @@ renderPublication(
   "The 53rd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (Disrupt Track)",
   "https://www.researchgate.net/publication/371760975_Automatic_Generation_of_Distributed_Algorithms_with_Generative_AI",
   "",
-  "June 2023"
+  "June 2023",
+  true
 );
 
 renderPublication(
@@ -119,7 +126,8 @@ renderPublication(
   "Master Thesis",
   "https://www.researchgate.net/publication/367268385_MIRES_Recovering_Mobile_Applications_based_on_Backend-as-a-Service_from_Cyber_Attacks",
   "https://github.com/diogolvaz/MIRES",
-  "November 2020"
+  "November 2020",
+  false
 );
 
 renderPublication(
@@ -129,7 +137,8 @@ renderPublication(
   "arXiv Preprint",
   "https://www.researchgate.net/publication/362410565_Learning_to_generate_Reliable_Broadcast_Algorithms",
   "",
-  "July 2022"
+  "July 2022",
+  false
 );
 
 renderPublication(
@@ -139,7 +148,8 @@ renderPublication(
   "Público (Portuguese Journal)",
   "https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140",
   "",
-  "May 2023"
+  "May 2023",
+  false
 );
 
 /**
@@ -155,13 +165,15 @@ function renderPublication(
   place,
   publication_link,
   code_link,
-  date
+  date,
+  selected
 ) {
   document.getElementById(tag).innerHTML =
     '<div class="d-flex flex-column flex-md-row justify-content-between mb-5">\
           <div class="flex-grow-1">\
             <div class="publication-tittle">\
               ' +
+    renderSelected(selected) + ' ' +
     tittle +
     '\
             </div>\
@@ -215,6 +227,13 @@ function renderIcons(publication_link, code_link) {
   return icons;
 }
 
+function renderSelected(selected) {
+  if (selected) {
+    return '<i class="fa fa-star selected-star"></i>';
+  }
+    return '';
+}
+
 //#########################################################################################################
 //#########################################################################################################
 
@@ -236,27 +255,27 @@ function renderIcons(publication_link, code_link) {
 renderTeaching(
   "SIRS_2022",
   "Network and Systems Security",
-  "MSc in Information Systems and Computer Engineering",
+  "Master in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
-  "November 2021 - March 2022",
+  "November 2021 - February 2022",
   "Teaching Assistant in laboratory classes"
 );
 
 renderTeaching(
   "SD_2022",
   "Distributed Systems",
-  "BSc in Information Systems and Computer Engineering",
+  "Bachelor in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
-  "March 2022 - July 2023",
+  "March 2022 - Present",
   "Teaching Assistant in laboratory classes"
 );
 
 renderTeaching(
   "OS_2023",
   "Operating Systems",
-  "BSc in Information Systems and Computer Engineering",
+  "Bachelor in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
-  "November 2022 - March 2023",
+  "November 2022 - February 2023",
   "Teaching Assistant in laboratory classes"
 );
 
@@ -297,9 +316,9 @@ function renderTeaching(tag, course_name, degree, institution, date, role) {
 
 renderExperience(
   "2020_Present",
-  "Junior Researcher",
+  "Ph.D. Student Researcher",
   "INESC-ID, Lisboa, Portugal",
-  "Junior researcher working on machine learning techniques to solve distributed problems",
+  "I'm conducting research on the field of fault-tolerant distributed algorithms. More specifically, I'm trying to use machine learning techniques to generate know and new fault-tolerant distributed algorithms such as Consensus.",
   "February 2020 - Present"
 );
 
@@ -307,15 +326,15 @@ renderExperience(
   "2020_2021",
   "IT Analyst",
   "Vodafone, Lisboa, Portugal",
-  "OutSytems developer working on the mobile application used by Vodafone commercials",
+  "I have integrated the team responsible for the application used by Vodafone's salespersons. The application was built using OutSystems' low code.",
   "September 2020 - January 2021"
 );
 
 renderExperience(
   "2019_2020",
-  "Student Researcher",
+  "Master's Student Researcher",
   "INESC-ID, Lisboa, Portugal",
-  "Master's student researching intrusion recovery applied to mobile application and Backend-as-a-Service",
+  "I have conducted research in the field of intrusion recovery. More precisely, I developed an intrusion recovery service for mobile applications based on Backend-as-a-Service (e.g. Firebase). The service was built using Java, NodeJS, Typescript, HTML, and Firebase.",
   "September 2019 - November 2020"
 );
 
@@ -323,7 +342,7 @@ renderExperience(
   "2018_2018",
   "Internship",
   "Xpand-IT, Lisboa, Portugal",
-  "Development of a web application using Microsoft Azure services",
+  "I have participated in the development of two different applications: (1) an application that, based on a photo, could identify the feelings expressed by those in that photo and (2) an application capable of identifying if the documents inserted by the users were correctly filled. Both applications were built using C#, HTML, and AI solutions from Microsoft Azure.",
   "June 2018 - August 2018"
 );
 
@@ -380,9 +399,9 @@ renderProject(
   "DE4A_2021_2022",
   "Digital Europe For All (DE4A) | European Project",
   "INESC-ID, Lisboa, Portugal",
-  "Developing a portal connecting the Portuguese public administration and university to public administrations of other countries",
+  "Responsible to develop a portal connecting the Portuguese public administration and university to public administrations of other countries",
   "https://www.de4a.eu/",
-  "February 2021 - Present"
+  "February 2021 - May 2023"
 );
 
 renderProject(
@@ -475,4 +494,74 @@ function renderCertificate(tag, place, work_description, link, duration) {
     </div>\
   </div>\
 </div>';
+}
+
+//#########################################################################################################
+//#########################################################################################################
+
+
+/**
+ *
+ * EDUCATION
+ *
+ */
+
+renderEducation(
+  "PhD",
+  "Ph.D. in Information Systems and Computer Engineering",
+  "Instituto Superior Técnico, Lisboa, Portugal",
+  "February 2021 - Present",
+  "<ul>\
+  <li>Researching <b>fault-tolerant algorithms with machine learning</b> techniques</li>\
+  <li>Supported by an <b>FCT Scholarship</b></li>\
+  </ul>"
+)
+
+renderEducation(
+  "BSc",
+  "Bachelor in Information Systems and Computer Engineering",
+  "Instituto Superior Técnico, Lisboa, Portugal",
+  "September 2015 - September 2018",
+  "<ul>\
+  <li>Final grade: 14/20</li>\
+  </ul>"
+);
+
+renderEducation(
+  "MSc",
+  "Master in Information Systems and Computer Engineering",
+  "Instituto Superior Técnico, Lisboa, Portugal",
+  "September 2018 - November 2020",
+  "<ul>\
+    <li>Specialization in <b>Distributed Systems</b>, <b>Artificial Intelligence</b> and <b>Cybersecurity</b></li>\
+    <li>Thesis title <b>MIRES: Recovering Mobile Applications based on Backend-as-a-Service from Cyber Attacks</b> with grade <b>20/20</b></li>\
+    <li>Final grade: 17/20</li>\
+  </ul>"
+);
+
+
+function renderEducation(tag, title, place, duration, extra) {
+  document.getElementById(tag).innerHTML = '<div\
+  class="d-flex flex-column flex-md-row justify-content-between mb-7"\
+  >'+
+  '<div class="flex-grow-1">\
+    <div class="publication-tittle mb-0">\ '
+    +
+    title
+    +
+    '</div>\
+    <div class="publication-authors mb-3">\ '
+    +
+    place
+    +
+    ' | '
+    +
+    duration
+    +
+    '</div>\ '
+    +
+    extra
+    +
+  '</div>\
+  </div>';
 }

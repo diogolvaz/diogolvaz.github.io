@@ -7674,7 +7674,7 @@ fieldset:disabled .btn {
 }
 
 .rounded-circle {
-  border-radius: 50% !important;
+  border-radius: 15% !important;
 }
 
 .rounded-pill {
@@ -11126,16 +11126,6 @@ p.lead {
   }
 }
 
-.dev-icons {
-  font-size: 3rem;
-}
-
-.expertize-star {
-  height: 1rem;
-  width: 1rem;
-  color: var(--bs-yellow);
-}
-
 section.resume-section {
   display: flex;
   align-items: center;
@@ -11143,7 +11133,6 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  /*max-width: 75rem;*/
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -11201,8 +11190,7 @@ section.resume-section .resume-section-content {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
-  font-size: 1.1rem;
-  font-style: italic;
+  font-size: 1.2rem;
 }
 
 .publication-authors {
@@ -11210,7 +11198,7 @@ section.resume-section .resume-section-content {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .publication-tittle {
@@ -11344,6 +11332,22 @@ section.resume-section .resume-section-content {
   height: 2.5rem;
   width: 2.5rem;
   margin-bottom: 1.2rem;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.expertize-star {
+  height: 1rem;
+  width: 1rem;
+  color: var(--bs-yellow);
+}
+
+.selected-star {
+  height: 1.7rem;
+  width: 1.7rem;
+  color: var(--bs-yellow);
 }
 
 /*
