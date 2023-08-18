@@ -318,15 +318,23 @@ renderExperience(
   "2020_Present",
   "Ph.D. Student Researcher",
   "INESC-ID, Lisboa, Portugal",
-  "I'm conducting research on the field of fault-tolerant distributed algorithms. More specifically, I'm trying to use machine learning techniques to generate know and new fault-tolerant distributed algorithms such as Consensus.",
+  "I'm conducting research on the field of fault-tolerant distributed algorithms. More specifically, I'm trying to <b>use machine learning techniques to develop known and new fault-tolerant distributed algorithms</b> such as Consensus.",
   "February 2020 - Present"
+);
+
+renderExperience(
+  "2021_Present",
+  "Teaching Asssistant",
+  "Instituto Superior Técnico, Lisboa, Portugal",
+  "I'm responsible for the laboratory classes. Until now, I have taught the courses of <b>Systems and Network Security (Master's Degree)</b>, <b>Distributed Systems (Bachelor's Degree)</b> and <b>Operating Systems (Bachelor's Degree)</b>.",
+  "November 2021 - Present"
 );
 
 renderExperience(
   "2020_2021",
   "IT Analyst",
   "Vodafone, Lisboa, Portugal",
-  "I have integrated the team responsible for the application used by Vodafone's salespersons. The application was built using OutSystems' low code.",
+  "I have integrated the team responsible for the application used by Vodafone's salespersons. The application was built using <b>OutSystems' low code</b>.",
   "September 2020 - January 2021"
 );
 
@@ -334,7 +342,7 @@ renderExperience(
   "2019_2020",
   "Master's Student Researcher",
   "INESC-ID, Lisboa, Portugal",
-  "I have conducted research in the field of intrusion recovery. More precisely, I developed an intrusion recovery service for mobile applications based on Backend-as-a-Service (e.g. Firebase). The service was built using Java, NodeJS, Typescript, HTML, and Firebase.",
+  "I have conducted research in the field of intrusion recovery. More precisely, I developed an intrusion recovery service for mobile applications based on Backend-as-a-Service (e.g. Firebase). The service was built using <b>NodeJS, Typescript, Javascript, HTML, CSS, and Firebase</b>.",
   "September 2019 - November 2020"
 );
 
@@ -342,7 +350,7 @@ renderExperience(
   "2018_2018",
   "Internship",
   "Xpand-IT, Lisboa, Portugal",
-  "I have participated in the development of two different applications: (1) an application that, based on a photo, could identify the feelings expressed by those in that photo and (2) an application capable of identifying if the documents inserted by the users were correctly filled. Both applications were built using C#, HTML, and AI solutions from Microsoft Azure.",
+  "I have participated in the development of two different applications: (1) an application that, based on a photo, could identify the feelings expressed by those in that photo and (2) an application capable of identifying if the documents inserted by the users were correctly filled. Both applications were built using <b>C#, HTML, and AI solutions from Microsoft Azure</b>.",
   "June 2018 - August 2018"
 );
 
@@ -406,7 +414,7 @@ renderProject(
 
 renderProject(
   "FAULTAGE",
-  "Generating Fault-Tolerant Distributed Algorithms using Generative AI",
+  "Generating Fault-Tolerant Distributed Algorithms using Generative AI (FAULTAGE)",
   "INESC-ID, Lisboa, Portugal",
   "My PhD work where I'm developing automatic processes to generating fault-tolerant distributed algorithms using machine learning techniques",
   "https://diogolvaz.github.io/FAULTAGE/",
@@ -521,9 +529,9 @@ renderEducation(
   "BSc",
   "Bachelor in Information Systems and Computer Engineering",
   "Instituto Superior Técnico, Lisboa, Portugal",
-  "September 2015 - September 2018",
+  "September 2015 - January 2019",
   "<ul>\
-  <li>Final grade: 14/20</li>\
+  <li>Final grade of 14/20</li>\
   </ul>"
 );
 
@@ -535,7 +543,7 @@ renderEducation(
   "<ul>\
     <li>Specialization in <b>Distributed Systems</b>, <b>Artificial Intelligence</b> and <b>Cybersecurity</b></li>\
     <li>Thesis focused on the field of <b>intrusion recovery for mobile applications</b> with a grade of <b>20/20</b></li>\
-    <li>Final grade: 17/20</li>\
+    <li>Final grade of 17/20</li>\
   </ul>"
 );
 
