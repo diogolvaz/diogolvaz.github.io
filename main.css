@@ -10,7 +10,8 @@ h1,h2,h3,h4,h5{
 
 /* colors*/
 :root {
-  --main-color-1:#f9f7f7;
+  --main-color-1:#9bb9d61d;
+  --main-color-2:#ffffff;
   --icon-color:#000000;
   --divider-color: #d2d2d2;
   --white-color: #ffffff;
@@ -25,7 +26,10 @@ h1,h2,h3,h4,h5{
   border: none;
   text-align: center;
   outline: none;
-  background-color: var(--main-color-1);
+}
+
+.more-button-color-2{
+  background-color: var(--main-color-2);
 }
 
 .more-button:hover{
@@ -34,8 +38,11 @@ h1,h2,h3,h4,h5{
 
 /*section*/
 .section{
-  border-bottom: 2px solid var(--divider-color);
   background-color: var(--main-color-1);
+}
+
+.publications-section{
+  background-color: var(--main-color-2);
 }
 
 .section-content{
@@ -46,10 +53,21 @@ h1,h2,h3,h4,h5{
 /*icons*/
 .icon{
   color: var(--icon-color);
+  cursor: pointer;
 }
 
 .star-icon{
   color:var(--star-icon);
+}
+
+/*divider*/
+.divider{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.divider-container{
+  background-color: var(--main-color-1);
 }
 
 /*paper*/
@@ -66,4 +84,9 @@ h1,h2,h3,h4,h5{
   font-style: italic;
 }
 
-
+/*profile image*/
+.profile-image{
+  width: 80%;
+  border: 2px solid var(--divider-color);
+  border-radius: 20px;
+}
