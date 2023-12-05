@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="section">
+<div class="background-1-section">
     <div class="container section-content d-flex">
         <div class="container w-75">
             <h1><b>Diogo Lopes Vaz</b></h1>
@@ -44,6 +44,9 @@
                     </a>
                 </div>    
             </div>
+            <!--div class="last-update-info mt-3">
+                <p>(last update: )</p>
+            </div-->
         </div>
         <div class="container w-25">
             <img class="profile-image" src="images/Diogo_Vaz.png">
@@ -59,44 +62,30 @@
 
 <div class="divider-container"><hr class="divider"></div>
 
-<div class="publications-section">
+<div class="background-2-section">
     <div class="container section-content">
         <div class="container d-flex justify-content-center mb-5">
-            <h3><b>Publications</b></h3>  
+            <h3><b>Selected Publications</b></h3>  
         </div>
         <!--list of papers-->
+        <div id="list-of-selected-papers" class="container">
+        </div>
+    </div>
+    <div class="collapse container" id="publicationsMore">
+        <div class="container d-flex justify-content-center mb-3">
+            <h5><b>All Publications</b></h5>  
+        </div>
         <div id="list-of-papers" class="container">
-            <div class="d-flex">
-                <div><i class="fa-solid fa-star fa-xl star-icon"></i></div>
-                <div class="container w-75">
-                    <p class="paper-title">Synthesis of Fault-Tolerant Reliable Broadcast Algorithms with Reinforcement Learning</p>
-                    <p class="paper-authors"><b>Diogo Vaz</b>, David R. Matos, Miguel L. Pardal and Miguel Correia</p>
-                    <p class="paper-publisher">IEEE Access Journal, June 2023</p>
-                </div>
-                <div class="container d-flex w-25 justify-content-end">
-                    <div>
-                        <i class="fa-solid fa-file fa-xl icon"></i>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code fa-xl icon"></i>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <div class="collapse" id="publicationsMore">
-        <div class="container">
-            <p>UNDER CONSTRUCTION</p>
-        </div>
-    </div>
-    <button class="more-button more-button-color-2" data-toggle="collapse" data-target="#publicationsMore" aria-expanded="false" aria-controls="publicationsMore"><b>more</b></button>
+    <button id="publications-more-button" class="more-button more-button-color-2" data-toggle="collapse" data-target="#publicationsMore" aria-expanded="false" aria-controls="publicationsMore">more</button>
 </div>
 
 <div class="divider-container"><hr class="divider"></div>
 
-<!--div class="section">
-    <div id="teaching" class="w3-container">
-        <div class="w3-container">
+<!--div class="background-1-section">
+    <div id="container" class="container">
+        <div class="container">
             <h3><b>Teaching</b></h3>  
         </div>
     </div>
@@ -106,7 +95,9 @@
     </div>
 </div>
 
-<div class="section">
+<div class="divider-container"><hr class="divider"></div>
+
+<!--div class="section">
     <div id="experience" class="w3-container">
         <div class="w3-container">
             <h3><b>Selected Experience</b></h3>  
@@ -140,4 +131,6 @@
     </div>
 </div-->
 </body>
+<!--local file-->
+<script src="main.js"></script>
 </html>

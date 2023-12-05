@@ -10,9 +10,10 @@ h1,h2,h3,h4,h5{
 
 /* colors*/
 :root {
-  --main-color-1:#9bb9d61d;
-  --main-color-2:#ffffff;
+  --background-color-1:#9bb9d61d;
+  --background-color-2:#ffffff;
   --icon-color:#000000;
+  --icon-hover-color:#8a8888;
   --divider-color: #d2d2d2;
   --white-color: #ffffff;
   --star-icon: #f4d122;
@@ -29,7 +30,7 @@ h1,h2,h3,h4,h5{
 }
 
 .more-button-color-2{
-  background-color: var(--main-color-2);
+  background-color: var(--background-color-2);
 }
 
 .more-button:hover{
@@ -37,23 +38,27 @@ h1,h2,h3,h4,h5{
 }
 
 /*section*/
-.section{
-  background-color: var(--main-color-1);
+.background-1-section{
+  background-color: var(--background-color-1);
 }
 
-.publications-section{
-  background-color: var(--main-color-2);
+.background-2-section{
+  background-color: var(--background-color-2);
 }
 
 .section-content{
   padding-top: 3%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 
 /*icons*/
 .icon{
   color: var(--icon-color);
   cursor: pointer;
+}
+
+.icon:hover{
+  color: var(--icon-hover-color);
 }
 
 .star-icon{
@@ -67,7 +72,7 @@ h1,h2,h3,h4,h5{
 }
 
 .divider-container{
-  background-color: var(--main-color-1);
+  background-color: var(--background-color-1);
 }
 
 /*paper*/
@@ -87,6 +92,12 @@ h1,h2,h3,h4,h5{
 /*profile image*/
 .profile-image{
   width: 80%;
-  border: 2px solid var(--divider-color);
   border-radius: 20px;
+}
+
+/* last update info*/
+.last-update-info{
+  font-size: small;
+  font-style: italic;
+  color: var(--icon-color);
 }
