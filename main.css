@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5{
   --divider-color: #d2d2d2;
   --white-color: #ffffff;
   --star-icon: #f4d122;
+  --publisher-color: #123c60b2;
 }
 
 /*more button*/
@@ -87,6 +88,10 @@ h1,h2,h3,h4,h5{
 
 .paper-publisher{
   font-style: italic;
+  background-color: var(--publisher-color);
+  color: white;
+  border-radius: 10px;
+  font-size:medium
 }
 
 /*profile image*/
@@ -101,3 +106,4 @@ h1,h2,h3,h4,h5{
   font-style: italic;
   color: var(--icon-color);
 }
+
