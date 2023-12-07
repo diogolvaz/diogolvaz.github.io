@@ -83,7 +83,7 @@ h1,h2,h3,h4,h5{
 /*paper*/
 .paper-title{
   font-size:larger;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .paper-authors{
@@ -117,3 +117,14 @@ h1,h2,h3,h4,h5{
   border-radius: 20px;
 }
 
+.teaching-year{
+  color: var(--divider-color);
+  font-size:x-large;
+  width:fit-content;
+  margin-top: 0%;
+}
+
+.teaching-degree{
+  font-size: medium;
+  font-style: italic;
+}

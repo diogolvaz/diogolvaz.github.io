@@ -1,6 +1,7 @@
 
 
-// JavaScript
+/**************************************************************************************************************************** */
+
 const publications_more_button = document.querySelector("#publications-more-button");
 
 publications_more_button.addEventListener("click", function() {
@@ -87,3 +88,76 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
     paper_list=document.getElementById('list-of-papers')
     paper_list.innerHTML+=element
 }
+
+/**************************************************************************************************************************** */
+
+
+addTeachingYear("2023-2024")
+addTeachingCourse("2023-2024","Distributed Systems","Bachelor degree course in Computer Science and Engineering")
+
+addTeachingYear("2022-2023")
+addTeachingCourse("2023-2024","Operating Systems","Bachelor degree course in Computer Science and Engineering")
+addTeachingCourse("2022-2023","Distributed Systems","Bachelor degree course in Computer Science and Engineering")
+
+addTeachingYear("2021-2022")
+addTeachingCourse("2021-2022","Distributed Systems","Bachelor degree course in Computer Science and Engineering")
+addTeachingCourse("2021-2022","Network and Systems Security","Masters degree course in Computer Science and Engineering")
+
+function addTeachingYear(year){
+    var element='\
+        <div class="mb-4">\
+                <hr class="mb-0 mt-0">\
+                <div class="container teaching-year d-flex justify-content-end">\
+                    '+year+'\
+                </div>\
+            </div> \
+            <div class="container d-flex mb-4">\
+                <div id="'+year+'-courses" class="container">\
+                    <div class="container d-flex justify-content-center">\
+                        <!--h4><b>Courses</b></h4-->\
+                    </div>\
+                </div>\
+                <div id="'+year+'-students" class="container">\
+                    <div class="container d-flex justify-content-center">\
+                        <!--h4><b>Students</b></h4-->\
+                    </div>\
+                </div>\
+            </div>\
+        </div'
+    
+    teaching_list=document.getElementById('teaching-list')
+    teaching_list.innerHTML+=element
+}
+
+function addTeachingCourse(year,course_name,course_degree){
+    var element='\
+        <div class="container mb-3">\
+            <div class="container paper-title">&#9679 <b>'+course_name+'</b></div>\
+            <div class="container teaching-degree">'+course_degree+'</div>\
+        </div>'
+    
+    teaching_list=document.getElementById(year+'-courses')
+    teaching_list.innerHTML+=element
+}
+
+// function addTeachingStudent(year,student_name,degree,project_name){
+//     var element='\
+//         <div class="mb-4">\
+//                 <hr class="mb-0">\
+//                 <div class="container teaching-year d-flex justify-content-end">\
+//                     '+year+'\
+//                 </div>\
+//             </div> \
+//             <div class="container d-flex mb-4">\
+//                 <div class="container d-flex justify-content-center">\
+//                     <h4><b>Courses</b></h4>\
+//                 </div>\
+//                 <div class="container d-flex justify-content-center">\
+//                     <h4><b>Students</b></h4>\
+//                 </div>\
+//             </div>\
+//         </div'
+    
+//     teaching_list=document.getElementById('teaching-list')
+//     teaching_list.innerHTML+=element
+// }
