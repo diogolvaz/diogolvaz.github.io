@@ -128,3 +128,12 @@ h1,h2,h3,h4,h5{
   font-size: medium;
   font-style: italic;
 }
+
+/* news */
+.new-date{
+  background-color: var(--publisher-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  text-align: center;
+  font-style: italic;
+}

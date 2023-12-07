@@ -96,8 +96,8 @@ addTeachingYear("2023-2024")
 addTeachingCourse("2023-2024","Distributed Systems","Bachelor degree course in Computer Science and Engineering")
 
 addTeachingYear("2022-2023")
-addTeachingCourse("2023-2024","Operating Systems","Bachelor degree course in Computer Science and Engineering")
 addTeachingCourse("2022-2023","Distributed Systems","Bachelor degree course in Computer Science and Engineering")
+addTeachingCourse("2022-2023","Operating Systems","Bachelor degree course in Computer Science and Engineering")
 
 addTeachingYear("2021-2022")
 addTeachingCourse("2021-2022","Distributed Systems","Bachelor degree course in Computer Science and Engineering")
@@ -161,3 +161,25 @@ function addTeachingCourse(year,course_name,course_degree){
 //     teaching_list=document.getElementById('teaching-list')
 //     teaching_list.innerHTML+=element
 // }
+
+
+/**************************************************************************************************************************** */
+
+
+addNew("November 2023","If you want to work on the disruptive topic of generating fault-tolerant algorithms with machine learning, send me a message!")
+addNew("October 2023", "I have defend my PhD proposal, being now an official PhD student!")
+
+function addNew(date,news,old_new){
+    var element='\
+    <div class="container d-flex mb-2">\
+        <div class="container w-25 new-date">\
+            <b>'+date+'</b>\
+        </div>\
+        <div class="container w-75 new">\
+            '+news+'\
+        </div>\
+    </div>'
+    
+    news_list=document.getElementById('list-of-news')
+    news_list.innerHTML+=element
+}
