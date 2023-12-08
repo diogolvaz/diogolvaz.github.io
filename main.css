@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5{
   --white-color: #ffffff;
   --star-icon: #f4d122;
   --publisher-color: #123c60b2;
+  --more-info-color: #4a4f53b7;
 }
 
 /*more button*/
@@ -31,7 +32,7 @@ h1,h2,h3,h4,h5{
 }
 
 .more-button-color-2{
-  background-color: var(--background-color-2);
+  background-color: #e7e6e67c;
 }
 
 .more-button-color-1{
@@ -42,13 +43,22 @@ h1,h2,h3,h4,h5{
   background-color: var(--divider-color);
 }
 
+.more-info{
+  color: var(--more-info-color  );
+  font-style: italic;
+  margin-bottom: 0%;
+  margin-right: 0.5%;
+}
+
 /*section*/
 .background-1-section{
   background-color: var(--background-color-1);
+  padding-bottom: 1%;
 }
 
 .background-2-section{
   background-color: var(--background-color-2);
+  padding-bottom: 1%;
 }
 
 .section-content{
@@ -111,10 +121,17 @@ h1,h2,h3,h4,h5{
   color: var(--icon-color);
 }
 
-/* teaching section information */
-.teaching-image{
+/* experience section information */
+.IST-image{
   width:50%;
-  border-radius: 20px;
+}
+
+.INESC-ID-image{
+  width:40%;
+}
+
+.VODAFONE-image{
+  width:30%;
 }
 
 .teaching-year{
@@ -130,7 +147,7 @@ h1,h2,h3,h4,h5{
 }
 
 /* news */
-.new-date{
+.news-date{
   background-color: var(--publisher-color);
   color: var(--white-color);
   border-radius: 20px;
