@@ -16,8 +16,10 @@ h1,h2,h3,h4,h5{
   --icon-hover-color:#8a8888;
   --divider-color: #d2d2d2;
   --white-color: #ffffff;
+  --black-color:  #000000;
   --star-icon: #f4d122;
-  --publisher-color: #123c60b2;
+  --publisher-color: #123c604a;
+  --news-color: #123c60be;
   --more-info-color: #4a4f53b7;
 }
 
@@ -62,8 +64,8 @@ h1,h2,h3,h4,h5{
 }
 
 .section-content{
-  padding-top: 3%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 /*icons*/
@@ -102,10 +104,8 @@ h1,h2,h3,h4,h5{
 
 .paper-publisher{
   font-style: italic;
-  background-color: var(--publisher-color);
-  color: white;
-  border-radius: 10px;
-  font-size:medium
+  color: black;
+  font-size: medium
 }
 
 /*profile image*/
@@ -148,7 +148,7 @@ h1,h2,h3,h4,h5{
 
 /* news */
 .news-date{
-  background-color: var(--publisher-color);
+  background-color: var(--news-color);
   color: var(--white-color);
   border-radius: 20px;
   text-align: center;
