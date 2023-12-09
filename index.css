@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5{
 
 /*paper*/
 .paper-title{
-  font-size:larger;
+  font-size:medium;
   margin-bottom: 1px;
 }
 
@@ -108,6 +108,7 @@ h1,h2,h3,h4,h5{
   color: black;
   font-size: medium
 }
+
 
 /*profile image*/
 .profile-image{
@@ -133,10 +134,12 @@ h1,h2,h3,h4,h5{
 
 .VODAFONE-image{
   width:60%;
+  opacity:0.5;
 }
 
 .DE4A-image{
   width:60%;
+  opacity:0.4;
 }
 
 .EUROSYS-image{
@@ -181,4 +184,9 @@ h1,h2,h3,h4,h5{
   font-size: small;
   padding-top: 1%;
   color:var(--more-info-color);
+}
+
+.link{
+  color:var(--news-color);
+  font-size: large;
 }

@@ -172,10 +172,10 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 
 /**************************************************************************************************************************** */
 
-addNew("May 2023", "I have published at <b>Público</b> (a portuguese journal) about my research! You can read it <a href='https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140'>here</a>.")
+addNew("November 2023","Looking for <b>master degree students</b> to work on the generation of fault-tolerant algorithms using machine learning!")
+addNew("October 2023", "I have <b>defend my PhD proposal</b>, with outstanding mentions on both presentation and discussion!")
 addNew("October 2023", "I served as an Artifact Evaluator for the <b>EuroSys 2024</b> conference.")
-addNew("October 2023", "I have defend my PhD proposal, being now an official PhD student!")
-addNew("November 2023","If you want to work on the disruptive topic of generating fault-tolerant algorithms with machine learning, send me a message!")
+addNew("May 2023", "I have published at <b>Público</b> (a portuguese journal) about my research! You can read it <b><a class='link' href='https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140'>here</a></b>.")
 
 
 function addNew(date,news,old_new){
