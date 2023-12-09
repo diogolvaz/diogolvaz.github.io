@@ -124,39 +124,29 @@ h1,h2,h3,h4,h5{
 }
 
 /* experience section information */
+
+.experience-image{
+  width: 50%;
+}
+
 .IST-image{
-  width:50%;
+  width: 35%;
 }
 
 .INESC-ID-image{
-  width:40%;
+  width: 35%
 }
 
-.VODAFONE-image{
-  width:60%;
-  opacity:0.5;
+.opacity-on{
+  opacity: 0.5;
 }
 
-.DE4A-image{
-  width:60%;
-  opacity:0.4;
+/* awards section*/
+
+.award-image{
+  width:20%;
 }
 
-.EUROSYS-image{
-  width:80%;
-}
-
-.RNCA-image{
-  width:30%;
-}
-
-.FCT-image{
-  width:30%;
-}
-
-.skill-image{
-  width:50%
-}
 
 /* teaching style*/
 .teaching-year{
