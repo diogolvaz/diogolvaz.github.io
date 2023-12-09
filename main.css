@@ -1,7 +1,8 @@
 /*body*/
 body{
   margin:0;
-  font-family: Optima, sans-serif !important;
+  background-color: var(--background-color-1);
+  font-family: Geneva,Tahoma,Verdana,sans-serif;
 }
 
 h1,h2,h3,h4,h5{
@@ -46,7 +47,7 @@ h1,h2,h3,h4,h5{
 }
 
 .more-info{
-  color: var(--more-info-color  );
+  color: var(--more-info-color);
   font-style: italic;
   margin-bottom: 0%;
   margin-right: 0.5%;
@@ -131,9 +132,30 @@ h1,h2,h3,h4,h5{
 }
 
 .VODAFONE-image{
+  width:60%;
+}
+
+.DE4A-image{
+  width:60%;
+}
+
+.EUROSYS-image{
+  width:80%;
+}
+
+.RNCA-image{
   width:30%;
 }
 
+.FCT-image{
+  width:30%;
+}
+
+.skill-image{
+  width:50%
+}
+
+/* teaching style*/
 .teaching-year{
   color: var(--divider-color);
   font-size:x-large;
@@ -151,6 +173,12 @@ h1,h2,h3,h4,h5{
   background-color: var(--news-color);
   color: var(--white-color);
   border-radius: 20px;
-  text-align: center;
-  font-style: italic;
+  align-items: center;
+}
+
+/*copyright*/
+.copyright-section{
+  font-size: small;
+  padding-top: 1%;
+  color:var(--more-info-color);
 }

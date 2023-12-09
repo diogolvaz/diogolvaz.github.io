@@ -1,4 +1,11 @@
 
+/**************************************************************************************************************************** */
+
+document.getElementById("last_update").innerHTML =
+  "Last update: " + [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ][new Date(document.lastModified).getMonth()] + " " + new Date(document.lastModified).getFullYear();
 
 /**************************************************************************************************************************** */
 
@@ -65,7 +72,7 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
             <i class="fa-solid fa-star fa-xl star-icon"></i>\
         </div-->\
         <div class="container w-75">\
-            <p class="paper-title"><b>&#9679 '+title+'</b></p>\
+            <p class="paper-title">&#9679<b> '+title+'</b></p>\
             <p class="paper-authors">'+authors+'</p>\
             <p class="d-flex paper-publisher ">'+publisher+', '+date+'</p>\
         </div>\
@@ -165,16 +172,16 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 
 /**************************************************************************************************************************** */
 
-
-addNew("November 2023","If you want to work on the disruptive topic of generating fault-tolerant algorithms with machine learning, send me a message!")
-addNew("October 2023", "I have defend my PhD proposal, being now an official PhD student!")
-addNew("October 2023", "I served as an Artifact Evaluator for the <b>EuroSys 2024</b> conference.")
 addNew("May 2023", "I have published at <b>Público</b> (a portuguese journal) about my research! You can read it <a href='https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140'>here</a>.")
+addNew("October 2023", "I served as an Artifact Evaluator for the <b>EuroSys 2024</b> conference.")
+addNew("October 2023", "I have defend my PhD proposal, being now an official PhD student!")
+addNew("November 2023","If you want to work on the disruptive topic of generating fault-tolerant algorithms with machine learning, send me a message!")
+
 
 function addNew(date,news,old_new){
     var element='\
     <div class="container d-flex mb-2">\
-        <div class="container w-25 news-date">\
+        <div class="container d-flex justify-content-center w-25 news-date">\
             <b>'+date+'</b>\
         </div>\
         <div class="container w-75">\
