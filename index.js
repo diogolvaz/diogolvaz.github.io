@@ -182,7 +182,7 @@ function addNew(date,news,old_new){
     var element='\
     <div class="container d-flex mb-2">\
         <div class="container d-flex justify-content-center w-25 news-date">\
-            <b>'+date+'</b>\
+            '+date+'\
         </div>\
         <div class="container w-75">\
             '+news+'\
