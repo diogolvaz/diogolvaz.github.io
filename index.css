@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5{
   font-family: Optima, sans-serif !important;
 }
 
+/* margins*/
+.ml-1{
+  margin-left: 1%;
+}
+
 /* colors*/
 :root {
   --background-color-1:#9bb9d61d;
@@ -181,4 +186,12 @@ h1,h2,h3,h4,h5{
 .link{
   color:var(--news-color);
   font-size: large;
+}
+
+/* intelligent distributed and secure computing */
+.research-moto{
+  font-size: medium;
+  font-style: italic;
+  color: var(--icon-hover-color);
+  text-align: center;
 }
