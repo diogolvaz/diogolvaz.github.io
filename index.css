@@ -179,20 +179,6 @@ h1,h2,h3,h4,h5{
   color: var(--icon-color);
 }
 
-/* experience section information */
-
-.width-50-image{
-  width: 50%;
-}
-
-.width-35-image{
-  width: 35%;
-}
-
-.width-30-image{
-  width: 30%;
-}
-
 /* teaching style*/
 .teaching-year{
   color: var(--divider-color);
