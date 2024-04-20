@@ -172,13 +172,13 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 
 /**************************************************************************************************************************** */
 
+addNew("April 2024","I'll be at <b>EPFL</b>, in Switzerland, as a <b>PhD Student visiting the Distributed Computing Lab</b>.")
 addNew("November 2023","Looking for <b>master degree students</b> to work on the generation of fault-tolerant algorithms using machine learning!")
 addNew("October 2023", "I have <b>defend my PhD proposal</b>, with outstanding mentions on both presentation and discussion!")
-addNew("October 2023", "I served as an Artifact Evaluator for the <b>EuroSys 2024</b> conference.")
 addNew("May 2023", "I have published at <b>Público</b> (a portuguese journal) about my research! You can read it <b><a class='link' href='https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140'>here</a></b>.")
 
 
-function addNew(date,news,old_new){
+function addNew(date,news){
     var element='\
     <div class="container d-flex mb-2">\
         <div class="container d-flex justify-content-center w-25 news-date">\
@@ -192,3 +192,24 @@ function addNew(date,news,old_new){
     news_list=document.getElementById('list-of-news')
     news_list.innerHTML+=element
 }
+
+/**************************************************************************************************************************** */
+
+// code needed to slide the images
+
+// JavaScript to slide images
+const slider = document.querySelector('.slider-content');
+let slideIndex = 0;
+const slideWidth = slider.clientWidth;
+
+function slideImages() {
+    slideIndex++;
+    if (slideIndex * slideWidth >= slider.scrollWidth) {
+      slideIndex = 0;
+    }
+    slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+}
+
+setInterval(slideImages, 2000); // Change image every 3 seconds (adjust as needed)
+
+/**************************************************************************************************************************** */

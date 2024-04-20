@@ -14,6 +14,51 @@ h1,h2,h3,h4,h5{
   margin-left: 1%;
 }
 
+.ml-25{
+  margin-left: 25%;
+}
+
+.ml-30{
+  margin-left: 30%;
+}
+
+/* width */
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-30{
+  width:30%
+}
+
+.w-35{
+  width: 35%;
+}
+
+.w-25{
+  width: 25%;
+}
+
+/* height */
+
+.h-50{
+  height: 50%;
+}
+
+.h-auto{
+  height: auto;
+}
+
+
 /* colors*/
 :root {
   --background-color-1:#9bb9d61d;
@@ -25,12 +70,17 @@ h1,h2,h3,h4,h5{
   --black-color:  #000000;
   --star-icon: #f4d122;
   --publisher-color: #123c604a;
-  --news-color: #123c60be;
+  --news-color: #0d2c47be;
   --more-info-color: #4a4f53b7;
 }
 
+/*name*/
+.name{
+  color: var(--news-color);
+}
+
 /*more button*/
-.more-button{
+/* .more-button{
   color: var(--icon-color);
   cursor: pointer;
   width: 100%;
@@ -50,6 +100,7 @@ h1,h2,h3,h4,h5{
 .more-button:hover{
   background-color: var(--divider-color);
 }
+*/
 
 .more-info{
   color: var(--more-info-color);
@@ -117,7 +168,7 @@ h1,h2,h3,h4,h5{
 
 /*profile image*/
 .profile-image{
-  width: 80%;
+  width: 75%;
   border-radius: 20px;
 }
 
@@ -130,26 +181,16 @@ h1,h2,h3,h4,h5{
 
 /* experience section information */
 
-.experience-image{
+.width-50-image{
   width: 50%;
 }
 
-.IST-image{
+.width-35-image{
   width: 35%;
 }
 
-.INESC-ID-image{
-  width: 35%
-}
-
-.opacity-on{
-  opacity: 0.5;
-}
-
-/* awards section*/
-
-.award-image{
-  width:20%;
+.width-30-image{
+  width: 30%;
 }
 
 /* teaching style*/
@@ -194,4 +235,17 @@ h1,h2,h3,h4,h5{
   font-style: italic;
   color: var(--icon-hover-color);
   text-align: center;
+}
+
+/* CODE FOR THE SLIDING OF IMAGES*/
+
+.slider-container {
+  overflow: hidden;
+  width: 90%; /* Adjust this according to your design */
+  height: 100%; /* Adjust this according to your design */
+  position: relative;
+}
+.slider-content {
+  display: flex;
+  transition: transform 0.5s ease;
 }
