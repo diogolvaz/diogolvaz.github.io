@@ -66,6 +66,7 @@ h1,h2,h3,h4,h5{
   --icon-color:#000000;
   --icon-hover-color:#8a8888;
   --divider-color: #d2d2d2;
+  --section-divider-color:#9bb9d653;
   --white-color: #ffffff;
   --black-color:  #000000;
   --star-icon: #f4d122;
@@ -143,10 +144,11 @@ h1,h2,h3,h4,h5{
 .divider{
   margin-top: 0;
   margin-bottom: 0;
+  background-color: var(--section-divider-color);
 }
 
 .divider-container{
-  background-color: var(--background-color-1);
+  background-color: var(--section-divider-color);
 }
 
 /*paper*/
