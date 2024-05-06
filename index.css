@@ -22,6 +22,23 @@ h1,h2,h3,h4,h5{
   margin-left: 30%;
 }
 
+.ml-40{
+  margin-left: 40%;
+}
+
+.ml-50{
+  margin-left: 50%;
+}
+
+.ml-55{
+  margin-left: 55%;
+}
+
+.ml-60{
+  margin-left: 60%;
+}
+
+
 /* width */
 
 .w-100 {
