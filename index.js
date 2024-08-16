@@ -213,3 +213,33 @@ function slideImages() {
 setInterval(slideImages, 2000); // Change image every 3 seconds (adjust as needed)
 
 /**************************************************************************************************************************** */
+
+// code for the counters
+
+document.addEventListener('DOMContentLoaded', () => {
+    const counter = document.querySelector('.counter');
+    const targetValue = parseInt(counter.getAttribute('data-target'), 10);
+    let started = false;
+
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !started) {
+            started = true;
+            incrementCounter(counter, targetValue);
+        }
+    }, { threshold: 0.5 });
+
+    observer.observe(counter);
+});
+
+function incrementCounter(element, target) {
+    let current = 0;
+    const increment = target / 200; // Adjust this value to control speed
+    const interval = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(interval);
+        }
+        element.textContent = Math.ceil(current);
+    }, 10);
+}

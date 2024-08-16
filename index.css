@@ -243,7 +243,6 @@ h1,h2,h3,h4,h5{
 .research-moto{
   font-size: medium;
   font-style: italic;
-  color: var(--icon-hover-color);
   text-align: center;
 }
 
@@ -258,4 +257,9 @@ h1,h2,h3,h4,h5{
 .slider-content {
   display: flex;
   transition: transform 0.5s ease;
+}
+
+/* CODE FOR THE COUNTERS */
+.counter {
+  font-size:4rem;
 }

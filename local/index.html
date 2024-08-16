@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* To create a scrollable page */
+        }
+        .counter-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .counter {
+            font-size: 5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content -->
+    <div style="height: 100vh;">Scroll down to see the counter...</div>
+
+    <div class="counter-section">
+        <div class="counter" data-target="1000">0</div>
+    </div>
+
+    <!-- Other content -->
+    <div style="height: 100vh;">You have reached the bottom of the page.</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.querySelector('.counter');
+            const targetValue = parseInt(counter.getAttribute('data-target'), 10);
+            let started = false;
+
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !started) {
+                    started = true;
+                    incrementCounter(counter, targetValue);
+                }
+            }, { threshold: 0.5 });
+
+            observer.observe(counter);
+        });
+
+        function incrementCounter(element, target) {
+            let current = 0;
+            const increment = target / 200; // Adjust this value to control speed
+            const interval = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(interval);
+                }
+                element.textContent = Math.ceil(current);
+            }, 10);
+        }
+    </script>
+</body>
+</html>
