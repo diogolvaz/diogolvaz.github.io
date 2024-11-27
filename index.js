@@ -72,7 +72,7 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
             <i class="fa-solid fa-star fa-xl star-icon"></i>\
         </div-->\
         <div class="container w-75">\
-            <p class="paper-title">&#9679<b> '+title+'</b></p>\
+            <h5 class="paper-title">&#9679 '+title+'</h5>\
             <p class="paper-authors">'+authors+'</p>\
             <p class="d-flex paper-publisher ">'+publisher+', '+date+'</p>\
         </div>\
@@ -121,12 +121,12 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 //             <div class="container d-flex mb-4">\
 //                 <div id="'+year+'-courses" class="container">\
 //                     <div class="container d-flex justify-content-center">\
-//                         <!--h4><b>Courses</b></h4-->\
+//                         <!--h4>Courses</h4-->\
 //                     </div>\
 //                 </div>\
 //                 <div id="'+year+'-students" class="container">\
 //                     <div class="container d-flex justify-content-center">\
-//                         <!--h4><b>Students</b></h4-->\
+//                         <!--h4>Students</h4-->\
 //                     </div>\
 //                 </div>\
 //             </div>\
@@ -139,7 +139,7 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 // function addTeachingCourse(year,course_name,course_degree){
 //     var element='\
 //         <div class="container mb-3">\
-//             <div class="container paper-title">&#9679 <b>'+course_name+'</b></div>\
+//             <div class="container paper-title">&#9679 '+course_name+'</div>\
 //             <div class="container teaching-degree">'+course_degree+'</div>\
 //         </div>'
     
@@ -157,10 +157,10 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 //             </div> \
 //             <div class="container d-flex mb-4">\
 //                 <div class="container d-flex justify-content-center">\
-//                     <h4><b>Courses</b></h4>\
+//                     <h4>Courses</h4>\
 //                 </div>\
 //                 <div class="container d-flex justify-content-center">\
-//                     <h4><b>Students</b></h4>\
+//                     <h4>Students</h4>\
 //                 </div>\
 //             </div>\
 //         </div'
@@ -172,10 +172,10 @@ function addPaper(title,authors,publisher,date,selected_paper,link){
 
 /**************************************************************************************************************************** */
 
-addNew("April 2024","I'll be at <b>EPFL</b>, in Switzerland, as a <b>PhD Student visiting the Distributed Computing Lab</b>.")
-addNew("November 2023","Looking for <b>master degree students</b> to work on the generation of fault-tolerant algorithms using machine learning!")
-addNew("October 2023", "I have <b>defend my PhD proposal</b>, with outstanding mentions on both presentation and discussion!")
-addNew("May 2023", "I have published at <b>Público</b> (a portuguese journal) about my research! You can read it <b><a class='link' href='https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140'>here</a></b>.")
+addNew("April 2024","I'll be at EPFL, in Switzerland, as a <a class='link' href='https://bigerachair.tecnico.ulisboa.pt/news-events/big-supports-visit-to-efpl/'>PhD Student visiting the Distributed Computing Lab</a>. ")
+addNew("November 2023","Looking for master degree students to work on the generation of fault-tolerant algorithms using machine learning!")
+addNew("October 2023", "I have defend my PhD proposal, with outstanding mentions on both presentation and discussion!")
+addNew("May 2023", "I have published at Público (a portuguese journal) about my research! You can read it <a class='link' href='https://www.publico.pt/2023/05/02/ciencia/noticia/aprender-gerar-algoritmos-2048140'>here</a>.")
 
 
 function addNew(date,news){

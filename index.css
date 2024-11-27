@@ -2,19 +2,18 @@
 body{
   margin:0;
   background-color: var(--background-color-1);
-  font-family: Geneva,Tahoma,Verdana,sans-serif;
+  font-family: Archivo !important;
 }
 
 h1,h2,h3,h4,h5{
-  font-family: Optima, sans-serif !important;
-}
-
-.role-name{
-  font-family: Optima, sans-serif !important;
-  font-size: large;
+  font-family: Cabin !important;
 }
 
 /* margins*/
+.ml-05{
+  margin-left: 0.5%;
+}
+
 .ml-1{
   margin-left: 1%;
 }
@@ -104,6 +103,7 @@ h1,h2,h3,h4,h5{
 /*name*/
 .name{
   color: var(--news-color);
+  font-family: Cabin !important;
 }
 
 /*more button*/
@@ -131,7 +131,7 @@ h1,h2,h3,h4,h5{
 
 .more-info{
   color: var(--more-info-color);
-  font-style: italic;
+  font-size: 14px;
   margin-bottom: 0%;
   margin-right: 0.5%;
 }
@@ -179,18 +179,19 @@ h1,h2,h3,h4,h5{
 
 /*paper*/
 .paper-title{
-  font-size:medium;
-  margin-bottom: 1px;
+  font-family: Cabin !important;
+  margin-bottom: 5px;
 }
 
 .paper-authors{
   margin-bottom: 1px;
+  font-size: medium;
 }
 
 .paper-publisher{
   font-style: italic;
   color: black;
-  font-size: medium
+  font-size: small
 }
 
 
@@ -227,13 +228,13 @@ h1,h2,h3,h4,h5{
   border-radius: 20px;
   align-items: center;
   margin-bottom: 0%;
-  font-family: Optima, sans-serif !important;
+  font-family: Cabin !important;
   font-size: large;
 }
 
 /*copyright*/
 .copyright-section{
-  font-size: small;
+  font-size: smaller;
   padding-top: 1%;
   color:var(--more-info-color);
 }
@@ -244,11 +245,11 @@ h1,h2,h3,h4,h5{
 }
 
 /* intelligent distributed and secure computing */
-.research-moto{
+/* .research-moto{
   font-size: medium;
   font-style: italic;
   text-align: center;
-}
+} */
 
 /* CODE FOR THE SLIDING OF IMAGES*/
 
