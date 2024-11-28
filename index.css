@@ -199,7 +199,7 @@ h1,h2,h3,h4,h5{
 
 /*profile image*/
 .profile-image{
-  width: 75%;
+  width: 90%;
   border-radius: 20px;
 }
 
@@ -270,3 +270,11 @@ h1,h2,h3,h4,h5{
 .counter {
   font-size:4rem;
 }
+
+/* QUOTES */
+.quote{
+  font-size: medium;
+  font-style: italic;
+  color: var(--dark-blue-color);
+}
+
