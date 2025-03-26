@@ -197,20 +197,18 @@ function addNew(date,news){
 
 // code needed to slide the images
 
-// JavaScript to slide images
-const slider = document.querySelector('.slider-content');
-let slideIndex = 0;
-const slideWidth = slider.clientWidth;
+const carousel = document.getElementById("carousel");
+const container = document.getElementById("carousel-container");
 
-function slideImages() {
-    slideIndex++;
-    if (slideIndex * slideWidth >= slider.scrollWidth) {
-      slideIndex = 0;
-    }
-    slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-}
+// Pause animation on hover
+container.addEventListener("mouseenter", () => {
+    carousel.style.animationPlayState = "paused";
+});
 
-setInterval(slideImages, 2000); // Change image every 3 seconds (adjust as needed)
+// Resume animation on mouse leave
+container.addEventListener("mouseleave", () => {
+    carousel.style.animationPlayState = "running";
+});
 
 /**************************************************************************************************************************** */
 

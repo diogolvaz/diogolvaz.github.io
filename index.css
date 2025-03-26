@@ -73,10 +73,38 @@ h1,h2,h3,h4,h5{
   width: 15%;
 }
 
+.w-80{
+  width: 80%;
+}
+
 /* height */
 
 .h-50{
   height: 50%;
+}
+
+.h-20{
+  height: 20%;
+}
+
+.h-10{
+  height: 10%;
+}
+
+.h-30{
+  height: 30%;
+}
+
+.h-40{
+  height: 40%;
+}
+
+.h-25{
+  height: 25%;
+}
+
+.h-35{
+  height: 35%;
 }
 
 .h-auto{
@@ -253,17 +281,61 @@ h1,h2,h3,h4,h5{
   text-align: center;
 } */
 
-/* CODE FOR THE SLIDING OF IMAGES*/
+/***************** CODE FOR THE SLIDING OF IMAGES *******************/
 
-.slider-container {
+.slider {
+  background: white;
+  height: 100px;
+  width: 250px; /* Adjusted for 3 slides | Changing this means that we need to change the slider/slider-track width calc and the slider/slide width */
   overflow: hidden;
-  width: 90%; /* Adjust this according to your design */
-  height: 100%; /* Adjust this according to your design */
   position: relative;
 }
-.slider-content {
+
+.slider::before, .slider::after {
+  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
   display: flex;
-  transition: transform 0.5s ease;
+  animation: scroll 10s linear infinite;
+  width: calc(250px * 6); /* 3 original slides + 3 duplicated */
+}
+
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slider .slide {
+  height: 250px;
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 3)); /* Move only 3 slides */
+  }
 }
 
 /* CODE FOR THE COUNTERS */
