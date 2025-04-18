@@ -281,12 +281,12 @@ h1,h2,h3,h4,h5{
   text-align: center;
 } */
 
-/***************** CODE FOR THE SLIDING OF IMAGES *******************/
+/***************** CODE FOR THE SLIDING OF THE ARTIFACT EVALUATION IMAGES *******************/
 
 .slider {
   background: white;
   height: 100px;
-  width: 250px; /* Adjusted for 3 slides | Changing this means that we need to change the slider/slider-track width calc and the slider/slide width */
+  width: 200px; /* Adjusted for 3 slides | Changing this means that we need to change the slider/slider-track width calc and the slider/slide width */
   overflow: hidden;
   position: relative;
 }
@@ -314,7 +314,7 @@ h1,h2,h3,h4,h5{
 .slider .slide-track {
   display: flex;
   animation: scroll 10s linear infinite;
-  width: calc(250px * 6); /* 3 original slides + 3 duplicated */
+  width: calc(250px * 8); /* 4 original slides + 4 duplicated */
 }
 
 .slider .slide-track:hover {
@@ -334,7 +334,7 @@ h1,h2,h3,h4,h5{
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-250px * 3)); /* Move only 3 slides */
+      transform: translateX(calc(-250px * 4)); /* Move only 3 slides */
   }
 }
 
@@ -348,6 +348,6 @@ h1,h2,h3,h4,h5{
   font-size: medium;
   font-style: italic;
   color: var(--dark-blue-color);
-  text-align: center;
+  text-align: center; 
 }
 
