@@ -114,48 +114,26 @@ h1,h2,h3,h4,h5{
 
 /* colors*/
 :root {
-  --background-color-1:#9bb9d61d;
+  --background-color-1:#004bad07;
   --background-color-2:#ffffff;
-  --icon-color:#000000;
-  --icon-hover-color:#8a8888;
-  --divider-color: #d2d2d2;
-  --section-divider-color:#9bb9d653;
+  --icon-color:#004aad;
+  --icon-hover-color:#004bad83;
+  --section-divider-color:#004bad24;
   --white-color: #ffffff;
   --black-color:  #000000;
-  --star-icon: #f4d122;
-  --dark-blue-color: #0d2c47be;
-  --more-info-color: #697b8ab7;
-  --dark-gray-color: #65666a;
+  --quote-color: #727070;
+  --paper-author-color: #727070;
+  --paper-publisher-color: #727070;
+  --name-color:#004aad;
+  --copyright-color: #727070;
+  --email-color: #727070;
 }
 
 /*name*/
 .name{
-  color: var(--dark-blue-color);
+  color: var(--name-color);
   font-family: Cabin !important;
 }
-
-/*more button*/
-/* .more-button{
-  color: var(--icon-color);
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-}
-
-.more-button-color-2{
-  background-color: #e7e6e67c;
-}
-
-.more-button-color-1{
-  background-color: var(--background-color-1);
-}
-
-.more-button:hover{
-  background-color: var(--divider-color);
-}
-*/
 
 .more-info{
   color: var(--more-info-color);
@@ -190,10 +168,6 @@ h1,h2,h3,h4,h5{
   color: var(--icon-hover-color);
 }
 
-.star-icon{
-  color:var(--star-icon);
-}
-
 /*divider*/
 .divider{
   margin-top: 0;
@@ -214,14 +188,14 @@ h1,h2,h3,h4,h5{
 .paper-authors{
   margin-bottom: 1px;
   font-size: medium;
-  color:var(--dark-gray-color);
+  color:var(--paper-author-color);
 }
 
 .paper-publisher{
   font-style: italic;
   color: black;
   font-size: small;
-  color:var(--dark-gray-color);
+  color:var(--paper-publisher-color);
 }
 
 
@@ -238,48 +212,23 @@ h1,h2,h3,h4,h5{
   color: var(--icon-color);
 }
 
-/* teaching style*/
-.teaching-year{
-  color: var(--divider-color);
-  font-size:x-large;
-  width:fit-content;
-  margin-top: 0%;
-}
-
 .teaching-degree{
   font-size: medium;
   font-style: italic;
-}
-
-/* news */
-.news-date{
-  background-color: var(--dark-blue-color);
-  color: var(--white-color);
-  border-radius: 20px;
-  align-items: center;
-  margin-bottom: 0%;
-  font-family: Cabin !important;
-  font-size: large;
 }
 
 /*copyright*/
 .copyright-section{
   font-size: smaller;
   padding-top: 1%;
-  color:var(--more-info-color);
+  color:var(--copyright-color);
 }
 
-.link{
-  color:var(--dark-blue-color);
-  font-size: large;
+.email{
+  color: var(--email-color);
+  text-decoration: none;
 }
 
-/* intelligent distributed and secure computing */
-/* .research-moto{
-  font-size: medium;
-  font-style: italic;
-  text-align: center;
-} */
 
 /***************** CODE FOR THE SLIDING OF THE ARTIFACT EVALUATION IMAGES *******************/
 
@@ -347,7 +296,7 @@ h1,h2,h3,h4,h5{
 .quote{
   font-size: medium;
   font-style: italic;
-  color: var(--dark-blue-color);
+  color: var(--quote-color);
   text-align: center; 
 }
 
