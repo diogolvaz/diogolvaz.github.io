@@ -1,5 +1,5 @@
-# diogolvaz.github.io
+# README
 
-link: https://diogolvaz.github.io/
+Link: https://diogolvaz.github.io/
 
-analytics: https://www.simpleanalytics.com/
+Analytics: https://www.simpleanalytics.com/
