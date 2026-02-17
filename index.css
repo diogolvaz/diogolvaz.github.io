@@ -232,8 +232,8 @@ h1,h2,h3,h4,h5{
 
 /***************** CODE FOR THE SLIDING OF THE ARTIFACT EVALUATION IMAGES *******************/
 
-.slider {
-  background: white;
+.slider{
+  background:var(--white-color);
   height: 100px;
   width: 200px; /* Adjusted for 3 slides | Changing this means that we need to change the slider/slider-track width calc and the slider/slide width */
   overflow: hidden;
@@ -241,7 +241,7 @@ h1,h2,h3,h4,h5{
 }
 
 .slider::before, .slider::after {
-  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, var(--white-color) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100%;
   position: absolute;
@@ -286,6 +286,64 @@ h1,h2,h3,h4,h5{
       transform: translateX(calc(-250px * 4)); /* Move only 3 slides */
   }
 }
+
+/* Slider with 2 slides */
+
+.slider-2 {
+  background:var(--white-color);
+  height: 100px;
+  width: 200px; /* Adjusted for 2 slides | Changing this means that we need to change the slider/slider-track width calc and the slider/slide width */
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-2::before, .slider-2::after {
+  background: linear-gradient(to right, var(--white-color) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider-2::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider-2::before {
+  left: 0;
+  top: 0;
+}
+
+.slider-2 .slide-track-2 {
+  display: flex;
+  animation: scroll-2 10s linear infinite;
+  width: calc(400px * 4); /* 2 original slides + 2 duplicated */
+}
+
+.slider-2 .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slider-2 .slide-2 {
+  height: 250px;
+  width: 400px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes scroll-2 {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-400px * 2)); /* Move only 2 slides */
+  }
+}
+
 
 /* CODE FOR THE COUNTERS */
 .counter {
