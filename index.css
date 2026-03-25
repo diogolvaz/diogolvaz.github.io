@@ -4,8 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 /* margins*/
 .ml-05{
   margin-left: 0.5%;
@@ -169,6 +167,13 @@ html {
   color:var(--color-6);
 }
 
+.section-sub-sub-sub-title{
+  margin-bottom: 1%;
+  margin-left: 1%;
+  font-size: 0.675rem;
+  color:var(--color-6);
+}
+
 .section-more-info{
   margin-top: 2%;
 }
@@ -227,7 +232,7 @@ a {
   width: 100%;
   background: var(--color-5);
   color: white;
-  padding-top: 0.5%;
+  padding-top: 1%;
   text-align: center;
   font-size: 0.885rem;
   z-index: 1000;
@@ -236,7 +241,7 @@ a {
 /* VERTICAL LINE */
 
 .vertical-line {
-  width: 2px;
+  width: 3px;
   background-color: var(--color-3);
   margin-right: 40px;
 }
@@ -254,7 +259,7 @@ a {
   height: 14px;
   border-radius: 50%;
   background: var(--color-4);
-  border: 2px solid var(--color-3);
+  border: 1px solid var(--color-3);
 }
 
 .big-circle {
@@ -266,7 +271,7 @@ a {
   height: 20px;
   border-radius: 50%;
   background: var(--color-4);
-  border: 2px solid var(--color-3);
+  border: 1px solid var(--color-3);
 }
 
 /* BUTTONS */
@@ -280,17 +285,13 @@ a {
 
 .btn-outline {
   padding: 0.5rem 1.2rem;
-  font-size: 0.9rem;
-
+  font-size: 0.775rem;
   color: var(--color-3);
   background-color: white;
-
-  border: 1.5px solid var(--color-3);
+  border: 1px solid var(--color-3);
   border-radius: 6px;
-
   text-decoration: none;
   transition: all 0.2s ease;
-
   letter-spacing: 0.2px;
 }
 
@@ -314,11 +315,11 @@ a {
 
 /*profile image*/
 .profile-image{
-  width: 70%;
+  width: 10rem;
   border-radius: 10px;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+  margin-left: 4rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
