@@ -252,7 +252,7 @@ a {
 
 .circle {
   position: absolute;
-  left: -46px;   /* adjust based on your layout */
+  left: -47px;   /* adjust based on your layout */
   top: 10px;
   margin-top: 4.5%;
   width: 14px;
@@ -313,13 +313,17 @@ a {
   font-size: 0.875rem;
 }
 
+.profile-image-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*profile image*/
 .profile-image{
   width: 10rem;
   border-radius: 10px;
   object-fit: cover;
   display: block;
-  margin-left: 4rem;
   margin-top: -3rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
